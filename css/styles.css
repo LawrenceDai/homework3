@@ -47,7 +47,7 @@ nav a:hover{
   transition: top 1s ease-out;
   z-index: 1;
   /*Your code here - position relative to the parent */
-  position: absolute;
+  position: relative;
   /*Your code here - place 500px left and 40px higher */
   top: -40px;
   left: 500px;
@@ -105,7 +105,7 @@ header{
   /* Your code here */
   /* Set background-image to header.jpg in the images folder */
   /* Span one row */
-  background-image: url("/images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-color: #DDDDDD;
   grid-column: 1 / -1;
 }
@@ -132,13 +132,10 @@ header p{
   grid-column: 2 / span 1;
 }
 
-img {
-  width: 100%;
-}
-
 .about-image, .method-image, .clients-image, .contact-image{
    /*Your code here */
    /* See documentation for mobile view */
+   width: 100%;
    max-height: 500px;
    grid-column: 1 / -1;
    overflow: hidden;
